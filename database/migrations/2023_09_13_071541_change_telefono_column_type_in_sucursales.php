@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //Nombre y campos de la tabla
-        Schema::create('sucursales', function (Blueprint $table) {
-            $table->id();
-            $table->string('nombre');
-            $table->string('direccion');
+        Schema::table('sucursales', function (Blueprint $table) {
             $table->string('telefono');
-            $table->timestamps();
         });
     }
 
@@ -26,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sucursales');
+        Schema::table('sucursales', function (Blueprint $table) {
+            //
+        });
     }
 };

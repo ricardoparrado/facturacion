@@ -30,9 +30,10 @@ header{
 }
 
 .logo img{
-    width: 150px;
+    max-width: 100px;
+    height: auto;
 }
-
+/*
 .icono-placeholder{
     padding: 0.25em 0.6em;
     border-radius: 0.3rem;
@@ -53,7 +54,7 @@ header{
     background-repeat: no-repeat;
     background-position: 1rem center;
 }
-
+*/
 
 /*Barra menu*/
 
